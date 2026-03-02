@@ -1,5 +1,3 @@
-/*
-
 
 
 \0 => Stop
@@ -11,15 +9,10 @@
 \" => Print "
 \' => Print '
 
-A
-JAVA
-
-
-
+       
 ////=======================================================================================================================================================================
 
-
-
+       
 x = 5
 y = x++ // x = 5 Then Plus 1
 y = x++ // x = 6
@@ -28,12 +21,11 @@ string name1 = "ss";
 string &name2 = name1;
 / "&" Used To Make "name2" Use The Same Location In Memory
 ? Lab6
-
-
-
+       
 
 ////=======================================================================================================================================================================
 
+       
 int = 2 // 4
 float = 1. (7 Numbers) // 4
 double = 1. (15 Numbers) // 8
@@ -41,11 +33,7 @@ char = 'r' // 1
 string = "ade" // To 32
 bool = true // 1
 
-
-
-
-
-
+       
 ////=======================================================================================================================================================================
 
 
@@ -58,11 +46,9 @@ stoi("150") ||to_string("150") => Change String To Integer
 char('@') = 64 // To ASCII
 
 
-
 #define maxi MAX_INT | typedef MAX_INT maxi; | using maxi = MAX_INT 
 
-
-
+       
 ////=======================================================================================================================================================================
 
 
@@ -79,8 +65,7 @@ cout << *y  // 10
 ////=======================================================================================================================================================================
 
 
-
-!  | Condition | =>
+              | Condition | =>
 
 
 if(Condition)                   
@@ -93,7 +78,7 @@ if(Condition)
 (Condition ? True : False)
 
 
-*?--------| EXAMPLE |
+               | EXAMPLE |
 int i;
 cin >> i;
 if (i == 1)
@@ -117,7 +102,8 @@ switch (Variable)
   default:
 }
 
-*?--------| EXAMPLE |
+
+               | EXAMPLE |
 
 switch (i)
 {
@@ -134,15 +120,15 @@ switch (i)
 ////============================================================================================================================================================================////
 
 
-
-!  | Loop | =>
+               | Loop | =>
 
 for (Init; End Condition; Update)
 {
   Block Of Code
 }
 
-*?---------| EXAMPLE |
+
+               | EXAMPLE |
 
 for (int i = 0; i < 11; i++)
 {
@@ -158,7 +144,8 @@ while (do Condition)
   Update
 }
 
-*?--------| EXAMPLE |
+
+               | EXAMPLE |
       
 int j = 0;
 while (j < 11)
@@ -177,7 +164,8 @@ do
 }
 while (Condition)
 
-*?--------| EXAMPLE |
+
+               | EXAMPLE |
 
 int k;
 do
@@ -201,7 +189,9 @@ setprecistion(3) // How Much Number After Point
 
 
 
-!   | Array | =>
+
+               | Array | =>
+       
 #include <array>
 
 int Numbers[3] = {2, 4, 5}; | array<int, 3> Numbers = {2, 4, 5}; => Array
@@ -215,7 +205,9 @@ Number.empty()  => 0 (bool)
 
 //                         //
 
-!  | Shifting | =>
+
+               | Shifting | =>
+       
           Example:    I Need To Shift Element to Next In Index To Add Num In Array In Meddle 
                           add 100[2] After 20[1] -- As Shift All Indexes Befor [1]
 
@@ -230,7 +222,9 @@ nums[index] = element;
 
 //                         //
 
-!   | Deleting | =>
+
+               | Deleting | =>
+       
           Example:    I Need To Delete Element So I Will Shift Rest Element To Back
                           Select Item => Delete => Shift
                           Delete 30[2]
@@ -260,7 +254,9 @@ for(int i = index; i < size; i++)
 ////=========================================================================================================================================================================////
 
 
-!  | String | =>
+
+               | String | =>
+                      
 #include <cstring> | <string.c>
 
 char fname[] = "An";
@@ -277,7 +273,8 @@ cout << fname.append(lname); => Put After
 
 
 
-!  | Function | =>
+
+               | Function | =>
 
 ReturnDataType FunctionName(Parameter1, parameter2, ......)
 {
@@ -286,7 +283,8 @@ ReturnDataType FunctionName(Parameter1, parameter2, ......)
   return Type;
 }
   
-*?--------| EXAMPLE |
+
+               | EXAMPLE |
   
 Functions
   
@@ -336,7 +334,8 @@ void test3(num6)
           
 //                         //
 
-*TODO:     Math Function:-
+
+              | Math Function |
 #include <cmath>
 
 pow(3, 2)     //* 3 Power 2    = 9
@@ -349,7 +348,8 @@ trunc(9.4)    //* Cut ".4"     = 9
 //                         //
 
 
-*TODO:     Built-In Function:-
+
+              | Built-In Function |
 
 #include <cctype>
 tolower('A')   //* Make Small   Letter = a 
@@ -370,7 +370,8 @@ count(10)      //* count of Number   = 4u
 
 
 
-!   | To Prevent Integer In String | =>
+
+               | To Prevent Integer In String | =>
 
 while (isdigit(items[numItems].name[0])) // Check If He Start With Integet
 {
@@ -381,7 +382,8 @@ while (isdigit(items[numItems].name[0])) // Check If He Start With Integet
 //                         //
 
 
-!  | To Prevent Character | =>
+
+               | To Prevent Character | =>
 
 while (!(cin >> items[numItems].price))
 {
@@ -405,7 +407,8 @@ while (!(cin >> items[numItems].price))
 ////===============================================================================================================================================================================////
 
 
-!         | DATA STRUCTURE | =>
+
+               | DATA STRUCTURE | =>
 
 
 
@@ -431,7 +434,7 @@ book b2 = {nam1, pri1}; // b2.name => nam1
 
 
 
-? Union
+  | Union |
 
 Like Structure But He Take The Largest Value For All Variables
 
@@ -439,7 +442,8 @@ Like Structure But He Take The Largest Value For All Variables
 ////===============================================================================================================================================================================////
 
 
-!!      | CLASS | =>
+
+               | CLASS | =>
 
 *  As Struct But:
 class book
@@ -474,7 +478,8 @@ In main()
 //                         //
 
 
-TODO:  How To Do Functions By Classes
+
+               How To Do Functions By Classes ?..
 =>
 int sum(int a, int b)
 {
@@ -534,7 +539,8 @@ class Book
 
 //                //
 
-?  Friend Function
+
+               | Friend Function |
 void book(string nam)
 {
   cout << " Hello ";
@@ -580,7 +586,8 @@ int main()
 
 //                         //
 
-!        | INHERITANCE | =>
+
+               | INHERITANCE | =>
 
 ? Move Variables To Inheritor...
 
@@ -601,7 +608,8 @@ class person
     }
 };
 
-TODO:   Single Inheritance
+
+               | Single Inheritance |
 class student : person // Because Student Has ( name, age, id, grade )
 {
   private:
@@ -626,7 +634,8 @@ int main()
   c1.sets(25207, 3);
 }
 
-TODO:   Parametrized Constructor
+
+               | Parametrized Constructor |
 
 class first
 {
@@ -659,29 +668,31 @@ int main()
   second n1(4);
 }
 
-TODO:     public:  |  private:  |  protected:  => In Class
 
-? public:
+               | public:  |  private:  |  protected:  => In Class |
+
+  public:
 Can Use Values In Main
 
-? private:
+  private:
 Only Use In Same Class
 
-? protect:
+  protect:
 Private Expect Someone
 
-TODO:   : public  |  : private  |  : protected  => In Inheritance
 
-? : public
+             |  : public  |  : private  |  : protected  => In Inheritance |
+
+  : public
 Inherit Copy Past (Usable)
 public  -> public
 private -> private
-? : private
+  : private
 Inherit All Private Variables
 public  -> private
 private -> private
 
-? : protected
+  : protected
 
 
 
@@ -754,4 +765,5 @@ private -> private
 
 
   
+
   */
